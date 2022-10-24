@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  /* nav */
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height:65px;
+    background: radial-gradient(ellipse at bottom, #00bdf0 5%,#1C5FA0 70%);
+  }
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #054380;
+    margin: 10px;
+    width: 80px;
+    border-bottom: #96b0ca 1px solid;
+    color: #fff;
+    height: 35px;
+  }
+  .item1 {
+    width: 150px;
+    border-radius: 30px;
+  }
+  .item2 {
+    margin-left: auto;
+  }
+  .flex-item a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .flex-item a:hover {
+    text-decoration: underline;
+  }
+  
+  /* header */
+  .header {
+    max-width: 100%;
+    height: 700px;
+    background-image: url(https://images2.alphacoders.com/718/71840.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .wrap{
+          margin: auto;
+          top: 250px;
+          position: absolute;
+          max-width: 500px;
+          right: 900px;
+  
+  }
+  .txt-header {
+    color: whitesmoke;
+    font-size:55px;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #FFA500 0%,
+    #FFFF00 29%,
+    #FF0000 67%,
+    #00ff00 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 15s linear infinite;
+    display: inline-block;
+  }
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  } 
+  /* section */
+  .section{
+    background-color: #fff;
+    height: 50%;
+  }
+  .h-txt{
+    text-align: center;
+    padding-top: 30px;
+  }
+  .card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card{
+    width: 300px;
+    height: 400px;
+    background-color: #800000;
+    margin: 50px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 200ms, box-shadow 500ms;
+    box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.8);
+    border-radius: 10px;
+    border: none;
+  }
+  .card.img-card-1{
+    background-image: url(https://fotografias-neox.atresmedia.com/clipping/cmsimages01/2022/03/04/6F3E2E33-8AAF-4607-8B3E-80261F00FB86/naruto_98.jpg?crop=1920,1080,x0,y0&width=1900&height=1069&optimize=high&format=webply);
+    background-size: cover;
+    background-position: center;
+  }
+  .card.img-card-2{
+    background-image: url(https://images4.alphacoders.com/727/thumbbig-72706.webp);
+    background-size: cover;
+    background-position: center;
+  }
+  .card.img-card-3{
+    background-image: url(https://images7.alphacoders.com/303/thumbbig-303042.webp);
+    background-size: cover;
+    background-position: center;
+  }
+  .card.img-card-4{
+    background-image: url(https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/10/naruto-team-7-sasuke-sakura-kakashi.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .card.img-card-5{
+    background-image: url(https://images.hdqwalls.com/download/anime-naruto-minimalism-j9-1920x1080.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .card.img-card-6{
+    background-image: url(https://staticg.sportskeeda.com/editor/2022/06/c1464-16548510907508-1920.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .card::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(35deg, transparent 0%, transparent 48%, rgba(255,255,255,0.1) 50%, transparent 100%);
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    background-size: 500px;
+    opacity: 0.5;
+    transition: background-position 300ms ease, opacity 300ms ease;
+  }
+  
+  .card:hover {
+    transform: perspective(512px) rotateX(4deg) scale(1.03);
+  }
+  
+  .card:hover::after {
+    opacity: 1;
+    background-position-y: -20px;
+  }
+  .container-txt{
+    background-color: #fff;
+    opacity: 0.5;
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    height: 130px;
+    padding: 20px;
+  }
+  .container-txt p{
+    padding-top: 5px;
+  }
+  .img1{
+    position: absolute;
+    top: -15px;
+    left: -20px;
+  }
+  .span-txt{
+    background-color: red;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -8px;
+    right: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+  }
+  .footer{
+    background: radial-gradient(ellipse at top, #00bdf0 5%,#1C5FA0 70%);
+    height: 80px;
+    width: 100%;
+    color: #fff;
+  }
+  
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+  }
+  
+  @media (max-width: 750px){
+    .txt-header{
+      font-size: 50px;
+    }
+     .wrap{
+      max-width: 41%;
+          margin: auto;
+          top: 200px;
+          position: relative;
+          left: 0px;
+    }
+     
+  }
+  @media (max-width: 600px){
+    .hamburger{
+      display: block;
+      transform: translateX(-30px);
+    }
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+      position: absolute;
+      left: -100%;
+      top: 60px;
+      gap: 0;
+      flex-direction: column;
+      background: radial-gradient(ellipse at top, #00bdf0 5%,#1C5FA0 70%);
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .flex-item{
+      margin: 16px 0;
+    }
+    .nav-menu.active{
+      left: 0;
+    }
+  }

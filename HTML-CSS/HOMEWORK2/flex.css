@@ -1,0 +1,60 @@
+body{
+    background-color: brown;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: tomato;
+}
+.navbar .box{
+    border: 1px solid;
+    width: 70%;
+    height: 50px;
+}
+.navbar .boxgr{
+    width: 100%;
+    background-color: green;
+    color: transparent;
+}
+.container {
+    display: flex;
+}
+.cont1 .box{
+    display: flex;
+    align-items: flex-start;
+    background-color: skyblue;
+    width: 100px;
+    border: 1px solid;
+    padding: 20px;
+    height: 30px;
+}
+.cont2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 50px;
+}
+.cont2 .box{
+    background-color: rgb(66, 132, 194);
+    width: 200px;
+    height: 215px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+    padding: 50px;
+}
+.txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: brown;
+}
